@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.IdentifyPerson" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.IdentifyPerson" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,5 +12,81 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Text.Default.Normal" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@android:color/tab_indicator_text</item>
+    </style>
+
+    <style name="Text.Black.Normal" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="InputTextAppearance" parent="ThemeOverlay.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="InputTextAppearanceError" parent="ThemeOverlay.AppCompat">
+        <item name="android:textColor">@color/red_shade</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="InputTextThemeOverlay" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/white_500</item>
+    </style>
+
+    <style name="Input.Default.Normal" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/white_200</item>
+        <item name="android:theme">@style/InputTextThemeOverlay</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">@color/black</item>
+        <item name="boxStrokeErrorColor">@color/red_shade</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="cornerRadius">@dimen/corner_tiny_8</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="errorIconTint">@null</item>
+        <item name="errorTextAppearance">@style/InputTextAppearanceError</item>
+        <item name="errorTextColor">@color/red_shade</item>
+        <item name="helperTextTextAppearance">@style/InputTextAppearance</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="hintEnabled">true</item>
+    </style>
+
+    <style name="Input.AutoComplete.Normal" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/white_200</item>
+        <item name="android:theme">@style/InputTextThemeOverlay</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">@color/black</item>
+        <item name="boxStrokeErrorColor">@color/red_shade</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="cornerRadius">@dimen/corner_tiny_8</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="errorIconTint">@null</item>
+        <item name="errorTextAppearance">@style/InputTextAppearanceError</item>
+        <item name="errorTextColor">@color/red_shade</item>
+        <item name="helperTextTextAppearance">@style/InputTextAppearance</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="hintEnabled">true</item>
+    </style>
+
+    <style name="Button.Default.Normal" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:height">@dimen/height_tall</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">@dimen/spacing_normal</item>
+        <item name="android:paddingRight">@dimen/spacing_normal</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="cornerRadius">@dimen/corner_small</item>
+        <item name="elevation">@dimen/elevation_tiny</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
     </style>
 </resources>
