@@ -57,7 +57,6 @@
             android:completionThreshold="1"
             android:hint="@string/select_your_province"
             android:imeOptions="actionNext"
-            android:inputType="none"
             android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>

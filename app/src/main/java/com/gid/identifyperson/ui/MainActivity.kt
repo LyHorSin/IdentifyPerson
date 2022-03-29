@@ -16,6 +16,7 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         initToolbar()
         initView()
+        initAction()
     }
 
     override fun getLayout(): View {
@@ -33,7 +34,14 @@ class MainActivity : BaseActivity() {
         val adapter = ArrayAdapter(this, R.layout.item_list_address, items)
         (mBinding.inputProvince as? AutoCompleteTextView)?.setAdapter(adapter)
         mBinding.inputProvince.setOnItemClickListener { parent, view, position, id ->
-            Toast.makeText(this, "Selected Item: " + adapter.getItem(position), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Selected Item: " + adapter.getItem(position), Toast.LENGTH_SHORT)
+                .show()
+        }
+    }
+
+    private fun initAction() {
+        mBinding.btnConfirm.setOnClickListener {
+            PeopleActivity.start(this)
         }
     }
 }
