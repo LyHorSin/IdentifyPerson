@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IdentifyPerson">
         <activity
+            android:name=".ui.PeopleInsertFormActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.PeopleActivity"
             android:exported="false" />
         <activity

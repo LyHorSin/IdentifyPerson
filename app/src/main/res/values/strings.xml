@@ -14,4 +14,21 @@
     <string name="family_book">Family Book:</string>
     <string name="permanent_address">Permanent Address</string>
     <string name="people_information">People Information</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="family_information">Family Information</string>
+    <string name="fill_your_information">Fill Your Information</string>
+    <string name="what_is_your_username">What is your username?</string>
+    <string name="what_is_your_nickname">What is your nickname?</string>
+    <string name="what_is_your_latin_name">What is your Latin name?</string>
+    <string name="when_were_you_born">When were you born?</string>
+    <string name="which_is_your_gender">Which is your gender?</string>
+    <string name="what_is_your_ethnicity">What is your ethnicity?</string>
+    <string name="what_is_your_occupation">What is your occupation?</string>
+    <string name="what_is_your_nationality">What is your nationality?</string>
+    <string name="what_is_your_education_level">What is your education level?</string>
+    <string name="what_is_your_birth_certificate">What is your birth certificate?</string>
+    <string name="what_is_your_resident_book">What is your resident book?</string>
+    <string name="what_is_your_family_book">What is your family book?</string>
 </resources>

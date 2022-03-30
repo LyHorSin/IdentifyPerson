@@ -68,6 +68,22 @@ abstract class BaseFragment : Fragment(), BaseView {
         return baseActivity?.isNetworkConnected() == true
     }
 
+    override fun onError(resId: Int) {
+
+    }
+
+    override fun onError(message: String?) {
+
+    }
+
+    override fun showMessage(message: String?) {
+
+    }
+
+    override fun showMessage(resId: Int) {
+
+    }
+
     override fun showBackArrow() {
 
     }

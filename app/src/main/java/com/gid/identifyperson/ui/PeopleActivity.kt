@@ -28,6 +28,7 @@ class PeopleActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         initToolbar()
         initPeopleRecycler()
+        initAction()
     }
 
     override fun getLayout(): View {
@@ -49,5 +50,11 @@ class PeopleActivity : BaseActivity() {
         val itemDecorator = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
         itemDecorator.setDrawable(ContextCompat.getDrawable(this, R.drawable.divider)!!)
         mBinding.recyclerPeople.addItemDecoration(itemDecorator)
+    }
+
+    private fun initAction() {
+        mBinding.btnAddNew.setOnClickListener {
+            PeopleInsertFormActivity.start(this)
+        }
     }
 }
